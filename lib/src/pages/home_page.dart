@@ -42,8 +42,11 @@ class _HomePageState extends State<HomePage> {
             children: [
               Row(
                 children: [
-                  Text('17', style: TextStyle(color: Colors.white, fontSize: 60.0),),
-                  Text('December', style: TextStyle(color: Colors.white, fontSize: 30.0),),
+                  Text('17', style: TextStyle(color: Colors.white, fontSize: 50.0),),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 15.0),
+                    child: Text('December', style: TextStyle(color: Colors.white, fontSize: 30.0),),
+                  ),
                 ],
               ),
               Row(
@@ -68,26 +71,25 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       CustomPaint(
-        size: Size(size.width, 200),
+        size: Size(size.width, 180),
         painter: BlueCustomPainter(),
         child: Container(
           alignment: Alignment.centerLeft,
-          height: 200,
+          height: 180,
           width: size.width,
           margin: EdgeInsets.only(left: 30.0),
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
               Row(
                 children: [
-                  Text('Snow',style: TextStyle(color: Colors.white, fontSize: 50.0),),
+                  Text('Snow',style: TextStyle(color: Colors.white, fontSize: 55.0),),
                   Icon(Iconsax.sun5,color: Colors.white, size: 40.0,)
                 ],
               ),
               Row(
                 children: [
-                  Text('-2ºC',style: TextStyle(color: Colors.white, fontSize: 30.0),),
+                  Text('-2ºC',style: TextStyle(color: Colors.white, fontSize: 40.0),),
                 ],
               ),
             ],
@@ -95,7 +97,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       CustomPaint(
-        size: Size(size.width, 200),
+        size: Size(size.width, 180),
         painter: YellowCustomPainter(),
       ),
       new Positioned(
@@ -103,7 +105,7 @@ class _HomePageState extends State<HomePage> {
         left: 90.0,
         child: new Container(  
           width: 500.0,
-          height: 600.0,          
+          height: 620.0,          
           decoration: BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/img/IllustrationA.png"),
@@ -117,7 +119,7 @@ class _HomePageState extends State<HomePage> {
   List<Widget> _listSnowCircle(){
     return <Widget> [
       CustomPaint(
-        painter: SnowCustomPainter(x: 200.0, y: 180.0, sizeCircle: 5.0),
+        painter: SnowCustomPainter(x: 210.0, y: 165.0, sizeCircle: 6.0),
         child: null
       ),
       CustomPaint(

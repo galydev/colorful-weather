@@ -4,9 +4,6 @@ class SnowContentCustomPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
 
-    debugPrint(size.width.toString());
-    debugPrint(size.height.toString());
-
     Paint paint = Paint()..color = Color(0XFFED3657)..style = PaintingStyle.fill;
     Path path = Path()..moveTo(0, 0);
 
